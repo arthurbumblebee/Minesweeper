@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+    <string name="mines_left">Mines left: %1$s</string>
+    <string name="restart">Restart</string>
+    <string name="try_field">Try</string>
+    <string name="flag_field">Flag</string>
+    <string name="congratulations_you_have_won">You have Won</string>
+    <string name="sorry_you_lost_game_over">Sorry you Lost :(</string>
+    <string name="congratulations">CONGRATULATIONS</string>
+    <string name="game_over">GAME OVER</string>
+</resources>

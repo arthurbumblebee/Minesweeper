@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minesweeperbg"
+    android:orientation="vertical"
+    tools:context="hu.ait.android.minesweeper.MainActivity">
+
+    <TextView
+        android:id="@+id/minesLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/mines_left"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvStatusTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/congratulations_you_have_won"
+        android:textColor="#ff0000"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <hu.ait.android.minesweeper.MinesweeperView
+            android:id="@+id/minesweeper"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/tryFlagToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textOff="@string/try_field"
+        android:textOn="@string/flag_field" />
+
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:text="@string/restart" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:intensity="0.7">
+
+        <TextView
+            android:id="@+id/tvStatusBotton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/congratulations"
+            android:textColor="#ff0008"
+            android:textSize="28sp"
+            android:visibility="gone"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+</LinearLayout>
